@@ -1,0 +1,271 @@
+/* Section 1 */
+.section1ContactUs{
+    position: relative;
+    width: 99%;
+    align-items: center;
+    margin: 10px 10px 0px 3px;  
+    border-radius: 20px;
+    background-image: url('../../Images/ContactUs/contactUS.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top ;
+}
+.section1ContactUs::before{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom right, rgba(11, 20, 55, 0.453) 30%, rgba(255, 255, 255, 0) 80%);
+    content: '';
+}
+.section1LeftSide{
+    z-index: 10;
+    /* margin-top: 19vh; */
+    width: 41%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+#forMobileView{
+    display: none;
+}
+.section1LeftSide .sectionHeading{
+    color: var(--white-color-for-text);
+    font-size: 55px;
+    letter-spacing: 1px;
+}
+.section1LeftSide .contactsHead{
+    color: var(--white-color-for-text);
+    font-family: var(--sen-font);
+    font-size: 30px;
+    margin-top: 5%;
+    margin-left: 1%;
+    margin-bottom: 1%;
+    letter-spacing: 0.75px;
+}
+.section1LeftSide .contactsTarget{
+    color: var(--white-color-for-text);
+    width:fit-content;
+    border-bottom: 3px solid var(--red-color-from-logo);
+    font-size: 25px;
+    font-family: var(--sen-font);
+    letter-spacing: 0.25px;
+    margin-left: 5%;
+    transition: transform 0.3s ease-in-out;
+}
+.section1LeftSide .contactsTarget:hover{
+    cursor:pointer;
+    color:var(--red-color-from-logo);
+    transform: scale(1.075);
+}
+
+#forDesktopView{
+    display: flex;
+}
+.section1RightSide{
+    z-index: 10;
+    width: 50%;
+    /* margin-top: 19vh;     */
+}
+.contactForm{
+    display: flex;
+    flex-wrap: wrap;
+}
+.entrySection{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 45%;
+    margin-block: 1%;
+    margin-inline: 2.5% ;
+}
+.inputHeading{
+    font-family: var(--sen-font);
+    font-size: 20px;
+    color:var(--white-color-for-text);
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+.contactFormInput{
+    background-color: #07254ab0;
+    font-family: var(--scoda-font);
+    border: none;
+    color: var(--red-color-from-logo);
+    font-size: 18px;
+    font-weight: 200;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    padding: 10px 15px;
+
+}
+.contactFormInput:active{
+    border: none;
+}
+.contactFormInput::placeholder{
+    color: #b8b8b8;
+}
+.pointSection{
+    display: flex;
+}
+.pointSection .contactFormPointer{
+    width: 1vw;
+    margin-right: 0.5rem;
+}
+.pointSection h5{
+    color: var(--white-color-for-text);
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.messageAndBtn{
+    width: 95%;
+    margin-inline: 2.5%;
+    display: flex;
+    flex-direction: column;
+}
+.messageAndBtn .messageSection{
+    min-height: 100px ;
+}
+.messageAndBtn button{
+    width: 35%;
+    align-self: center;
+    margin-top: 3%;
+    font-size: 18px;
+    font-family: var(--sen-font);
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    padding: 8px 10px;
+    background-color: var(--dark-blue-color-for-bg);
+    border: none;
+    color: var(--white-color-for-text);
+    transition: transform 0.3s ease-in ;
+}
+.messageAndBtn button:hover{
+    background-color: var(--red-color-from-logo);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+/* Section 2 */
+.section2ContactUs{
+    flex-direction: column;
+    margin-top: 4%;
+}
+.section2Head{
+    color: var(--blue-color-from-logo);
+    letter-spacing: 1px;
+    margin-bottom: 0.5%;
+}
+.officeAddress{
+    color: var(--red-color-from-logo);
+    font-size: 28px;
+    font-family:var(--sen-font);
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 1%;    
+}
+.officeLocationMap{
+    width: 100%;
+    height: 450px;
+    border:0;
+}
+@media (min-width: 1800px) {
+    .section1ContactUs{
+        height: 65vh !important;
+    }
+}
+@media (max-width: 1000px){
+    /* Section 1 */
+    .section1ContactUs{
+        justify-content: flex-end;
+        width: 94%;
+        margin: 10px auto 0px auto; 
+        background-position: 28% center;
+    }
+    .section1ContactUs::before{
+        background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 10%, rgba(11, 20, 55, 0.453) 60%);
+    }
+    .section1LeftSide{
+        width: 98%;
+        margin-bottom: 8%;
+        margin-top: 0%;
+    }
+    #forDesktopView{
+        display: none;
+    }
+    .section1LeftSide .sectionHeading{
+        font-size: 10vw;
+        letter-spacing: 0.25px;
+        text-align: center;
+    }
+    .section1LeftSide .contactsHead{
+        font-size: 28px;
+        text-align: center;
+        margin-left: 0%;
+    }
+    .section1LeftSide .contactsTarget{
+        font-size: 24px;
+        margin-left: 0%;
+        align-self: center;
+    }
+    #forMobileView{
+        display: block;
+        width: 87%;
+    }
+    .section1RightSide{
+        width: 96%;
+        margin-top: 0%  ;
+    }
+    .contactForm{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .entrySection{
+        width: 100%;
+    }
+    .inputHeading{
+        color: var(--red-color-from-logo);
+        font-weight: 600;
+    }
+    .contactFormInput{
+        background-color: #07254a66;
+        color: var(--white-color-for-text);
+    }
+    .contactFormInput::placeholder{
+        color: var(--white-color-for-text);
+    }
+    .pointSection h5{
+        color: var(--blue-color-from-logo);
+        font-weight: 600;
+        font-size: 16px;
+    }
+    .pointSection .contactFormPointer{
+        width: 3.5vw;
+        margin-right: 0.5rem;
+    }
+    .messageAndBtn{
+        width: 100%;
+    }
+    .messageAndBtn button{
+        margin-top: 8%;
+        margin-inline: auto;
+    }
+    .section2Head{
+        margin-top: 10%;
+        margin-bottom: 3%;
+        text-decoration: underline;
+        text-underline-offset: 6px;
+    }
+    .officeAddress{
+        display: none;
+    }
+    .officeLocationMap{
+        height: 300px;
+    }
+}

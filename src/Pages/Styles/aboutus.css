@@ -1,0 +1,236 @@
+
+
+/* Section 1 */
+
+.aboutSection1{
+    background-image: radial-gradient(
+    circle at 0% -15%,
+     rgba(136, 136, 136, 0.1) 0%,
+     rgba(151, 150, 150, 0.1) 33%,
+     rgba(76, 75, 75, 0.1) 33%,
+     rgba(96, 96, 06, 0.1) 66%,
+     rgba(7, 7, 7, 0.1) 66%, 
+     rgba(7, 7, 7, 0.1) 99%), 
+     linear-gradient(60deg, #19244d, #162561, #202e64, #25387a);
+}
+.imageAboutSection1{
+    display: block;
+}
+.section1Part1 h2{
+    font-family: var(--sen-font);
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--white-color-for-text);
+    text-transform: capitalize;
+}
+.section1Part1 span{
+    color: var(--red-color-from-logo);
+}
+.section1Part1 p{
+    color: var(--white-color-for-text);
+    /* font-family: var(--sen-font); */
+    font-weight: 200;
+    letter-spacing: 1px;
+    margin-right: 20px;
+}
+/* Section 2 */
+.aboutSection2{
+    flex-direction: column;
+    margin-block: 3% 7%;
+}
+.aboutSection2 h2{
+    margin-bottom: 2%;
+    color: var(--blue-color-from-logo);
+    text-align: center;
+    text-transform: capitalize;
+}
+.cardSection{
+    width: 28%;
+    max-width: 28%;
+    min-height: 45vh;
+    background-color: #1e2c5f;
+    border-radius: 20px;
+    background-size: cover;
+    position: relative;
+    background-position: center center;
+    transition: transform 0.5s ease-in-out;
+}
+.cardSection::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #0b143774; 
+}
+.cardSection:hover{
+    background-color: #152251;   
+    transform: scale(1.075);
+    opacity: 95%; 
+}
+.cs1{
+    background-image: url('../../Images/About/10968.jpg');
+}
+.cs2{
+    background-image: url('../../Images/About/4325.jpg');
+}
+.cs3{
+    background-image: url('../../Images/About/2149229073.jpg');
+}
+
+.cardBody{
+    display: flex;
+    z-index: 10;
+    position: relative;
+    flex-direction: column;
+    margin: 8%;
+}
+.cardBody svg{
+    width: 6vw;
+    margin-bottom: 5%;
+}
+
+.cardBody h4{
+    font-family: var(--sen-font);
+    color: var(--white-color-for-text);
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 22px;
+    margin-bottom: 5%;
+}
+.cardBody p{
+    color: var(--white-color-for-text);
+    font-weight: 100;
+    font-family: var(--sen-font);
+    font-size: 16px;
+    letter-spacing: 0px;
+}
+
+/* Section 3 */
+.aboutSection3{
+    background-attachment: fixed ;
+    background-image: url('../../Images/About/gettingHired.jpg');
+    background-size: contain;
+    background-position: 10vw center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    padding: 10% 0%;
+    position: relative;
+}
+.aboutSection3::before{
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #0b143774; 
+    content: '';
+    position: absolute;
+}
+.aboutSection3 h2, .aboutSection3 h5, .aboutSection3 p, .aboutSection3 a{
+    z-index: 10;
+}
+.aboutSection3 h5{
+    font-family: var(--scoda-font);
+    font-size: 15px;
+    color: var(--white-color-for-text);
+    font-weight: 100;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin-bottom: 1%;
+}
+.aboutSection3 h2{
+    color: var(--red-color-from-logo);
+    text-align: center;
+    text-shadow: 0px 0px 5px #ffffff4b;
+    text-transform: capitalize;
+    margin-bottom: 1%;
+}
+.aboutSection3 p{
+    text-align: center;
+    color: var(--white-color-for-text);
+    font-family: var(--sen-font);
+    font-size: 19px;
+    padding-inline: 10%;
+    line-height: 4vh;
+    text-transform: capitalize;
+    margin-bottom: 3%;
+}
+.getInTouchBtn{
+    background-color: var(--dark-blue-color-for-bg);
+    padding: 12px 20px;
+    font-family: var(--sen-font);
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: 600;
+    border-radius: 20px;
+    color: var(--white-color-for-text);
+    transition: transform 0.2s ease-in-out;
+}
+.getInTouchBtn:hover{
+    transform: scale(1.04);
+    /* letter-spacing: 2px; */
+}
+
+
+@media (max-width: 1000px){
+    /* Section 1 */
+    .aboutSection1{
+        padding-bottom: 5%;
+    }
+    .section1Part1{
+        width: 86%;
+    }
+    .section1Part1 h2{
+        font-size: 10vw;
+        text-align: center;
+        margin-block: 5%;
+    }
+    .imageAboutSection1{
+        margin-bottom: 5%;
+    }
+    .section1Part1 p{
+        text-align: center;
+        margin-bottom: 5%;
+        margin-right: 0%;
+    }
+    /* Section 2 */
+    .aboutSection2 h2{
+        margin-block:10% 5%;
+    }
+    .cardsBoard{
+        flex-direction: column;
+    }
+    .cardSection{
+        width: 80%;
+        max-width: 80%;
+        min-height: 45vh;
+        margin-block: 3%;
+        display: flex;
+        align-items: center;
+    }
+    .cardBody svg{
+        width: 16vw;
+    }
+    /* Section 3 */
+    .aboutSection3{
+        background-position: center;
+        background-attachment: scroll;
+        background-size: cover;
+        height: 60vh;
+    }
+    .aboutSection3 h5{
+        font-size: 16px;
+        margin-bottom: 3%;
+    }
+    .aboutSection3 h2{
+        margin-bottom: 3%;
+    }
+    .aboutSection3 p{
+        margin-bottom: 3%;
+        padding-inline: 5% ;
+        line-height: 3vh;
+    }
+}

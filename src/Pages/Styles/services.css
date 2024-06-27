@@ -1,0 +1,449 @@
+/* Section 1 */
+.servicesSection1{
+    position: relative;
+    max-height: 75vh !important;
+    width: 99%;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 10px 0px 3px;  
+    border-radius: 20px;
+    background-image: url(
+        https://img.freepik.com/premium-photo/group-people-sitting-around-wooden-table_1145069-11231.jpg?w=1380        );
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+.servicesSection1::before{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom right, rgba(11, 20, 55, 0.453) 30%, rgba(255, 255, 255, 0) 80%);
+    content: '';
+}
+.servicesSection1 .textSection1{
+    padding-left: 10%;
+    z-index: 10;
+}
+.servicesSection1 h2{
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--white-color-for-text);
+    text-transform: capitalize;
+}
+.servicesSection1 span{
+    color: var(--red-color-from-logo);
+    text-shadow:  0px 0px 5px #ffffff4b;
+}
+/* Section 2 */
+.servicesSection2{
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-block: 5%;
+}
+.section2Body{
+    width: 70%;
+}
+.servicesSection2 .section2Body h2{
+    margin-inline: 10%;
+    margin-bottom: 1%;
+    text-transform: capitalize; 
+    color: var(--blue-color-from-logo);
+}
+.section2Body2{
+    display: flex;
+    margin-top: 3%; 
+}
+.section2Body2Inner1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 5px 0px 8px #000000ab;
+    background-image: radial-gradient(
+        circle at 20% 80%,
+         rgba(136, 136, 136, 0.1) 0%,
+         rgba(151, 150, 150, 0.1) 33%,
+         rgba(76, 75, 75, 0.1) 33%,
+         rgba(96, 96, 06, 0.1) 66%,
+         rgba(7, 7, 7, 0.1) 66%, 
+         rgba(7, 7, 7, 0.1) 99%), 
+         linear-gradient(60deg, #19244d, #162561, #202e64, #25387a);
+}
+.section2Body2Inner1 h2{
+    color: var(--white-color-for-text);
+    padding-inline: 30%;
+}
+.section2Body2Inner2{
+    height: 55vh;
+    width: 75%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.section2Body2Inner2::-webkit-scrollbar{
+    height: 8px;
+    border-radius: 10px;
+}
+.section2Body2Inner2::-webkit-scrollbar-track{
+    background-color: #666666;
+}
+.section2Body2Inner2::-webkit-scrollbar-thumb{
+    background-color:   #124b82!important;
+    height: 1px;
+}
+.sliderCard{
+    width: 250px;
+    height: 350px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 5%;
+    margin-block: auto;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 2%;
+}
+.sliderCard:first-child{
+    margin-left: 2%;
+}
+.sliderCard:last-child{
+    margin-right: 2%;
+}
+.sliderCard::before{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0) 30%,rgba(11, 20, 55, 0.453) 80%);
+    content: '';    
+}
+.sliderCard h4{
+    z-index: 10;
+    margin-left: 5%;
+    font-family: var(--scoda-font);
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--white-color-for-text);
+}
+.sliderCard h5{
+    z-index: 10;
+    margin-left: 5%;
+    font-family: var(--scoda-font);
+    font-size: 23px;
+    font-weight: 400;
+    color: var(--white-color-for-text);
+}
+.manufacturing{
+    background-image: url(https://img.freepik.com/free-photo/workman-wearing-har-hat-with-measuring-ruler-factory_1303-26639.jpg?t=st=1718907321~exp=1718910921~hmac=9577173a2e18484327cd69bcce21366d8d0763781411be4bcf2e3430e5409eed&w=360);
+} 
+.automotive{
+    background-image: url(https://img.freepik.com/free-photo/vertical-photo-automobile-production-line-modern-car-assembly-plant-auto-industry-interior-hightech-factory-modern-production_645730-772.jpg?t=st=1718907408~exp=1718911008~hmac=9165295c5887089bc48846eab3e96fca593da771710c4ceb2adadfd3592d1979&w=360);
+}
+.food{
+    background-image: url(https://img.freepik.com/free-photo/view-delicious-glazed-donuts-factory_23-2150757589.jpg?t=st=1718907628~exp=1718911228~hmac=51c041f57d09f42dfb2915e407e66e5e6d16329a341bbfc9ccefbf1be2bf3393&w=360);
+}
+.construction{
+    background-image: url(https://img.freepik.com/free-photo/shanghai-developing_649448-3767.jpg?t=st=1718907645~exp=1718911245~hmac=15e03c1adbe98efd8fe8253dae83f66b29868d9209986be876d23c4ed75f0d85&w=360);
+}
+.packaging{
+    background-image: url(https://img.freepik.com/premium-photo/cardboard-boxes-conveyor-belt-warehouse-focus-foreground-blurred-background-with-shelves_127746-23159.jpg?w=360);
+}
+.transportation{
+    background-image: url(https://img.freepik.com/free-photo/transport-logistics-concept_23-2151541923.jpg?t=st=1718907429~exp=1718911029~hmac=8c8a9ef6fb0dcea09e9f878330889bbad64b4669cc1da70c7e990886ee56ad40&w=360);
+}
+.warehouse{
+    background-image: url(https://img.freepik.com/free-photo/people-taking-care-warehouse-logistics-together_23-2149128314.jpg?t=st=1718907846~exp=1718911446~hmac=8006b08b16aea73111518abbfec8936297bd785b011e61e50e2886af66261f02&w=360);
+}
+.pharmaceutical{
+    background-image: url(https://img.freepik.com/free-photo/medic-time-global-pandemic-working-microscope-dressed-ppe-suit_482257-962.jpg?t=st=1718907872~exp=1718911472~hmac=a80e8e03964e40e9996edebe52d21e47623b242c2a39fdefbe6d2bef2e127133&w=360);
+}
+.mining{
+    background-image: url(https://img.freepik.com/free-photo/heavy-excavator-digging-day-light_23-2149194833.jpg?t=st=1718907141~exp=1718910741~hmac=b37b066c926b26f02b6b6d0c34f556f829539366c745a6123e48f3f67aa14236&w=360);
+}
+.aerospace{
+    background-image: url(https://img.freepik.com/free-photo/engineer-working-with-airplane_1098-12553.jpg?t=st=1718907983~exp=1718911583~hmac=e71f4e23ec2ceb0d3840f94c88b3b87c430656ad3cc892afa34b0f8f955a481a&w=740);
+}
+.textile{
+    background-image: url(https://img.freepik.com/free-photo/picture-tailor-s-desktop-sewing-workshop_613910-5273.jpg?t=st=1718908329~exp=1718911929~hmac=3eefde6b94ff99e8d95f8bd5417a9ea67cab1cb61301e8053145c70ab047e5bb&w=360);
+}
+.electronics{
+    background-image: url(https://img.freepik.com/free-photo/technician-repairing-computer-motherboard_23-2147883608.jpg?t=st=1718908344~exp=1718911944~hmac=e3cd38fd7b8e8cbc38884a937e8151579986fcebff5ef9edae63f67dcaf412a7&w=360);
+}
+.logistics{
+    background-image: url(https://img.freepik.com/premium-photo/business-logistics-concept-container-cargo_926199-3995924.jpg?w=360);
+}
+
+/* Section 3 */
+.servicesSection3{
+    flex-direction: column;
+}
+.servicesSection3 h2{
+    color: var(--blue-color-from-logo);
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+.modesDisplay{
+    display: flex;
+    justify-content: space-evenly   ;
+    align-items: center;
+    width: 100%;
+    margin-block: 2% 3%;
+}
+.modeCard{
+    display: flex;
+    border-radius: 25px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #eff0ff;
+    width: 27%;
+    transition: transform 0.3s ease-in-out;
+}
+.modeCard:hover{
+    transform: scale(1.05);
+    background-color: #ced1fa;
+}
+.modeCard img{
+    width: 100%;
+    height: 35vh !important;
+    object-fit: cover;
+    border-radius: 25px 25px 0px 0px;
+    margin-bottom: 5%;
+}
+.modeCard h3{
+    font-family: var(--sen-font);
+    color: var(--red-color-from-logo);
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 2%;
+}
+.modeCard p{
+    font-size: 17px;
+    margin-bottom: 3%;
+    margin-inline: 5%;
+}
+.modeCard a{
+    font-size: 20px;
+    font-family: var(--scoda-font);
+    padding: 6px 20px;
+    border-radius: 25px;
+    border: none;
+    background-color: var(--red-color-from-logo);
+    color: var(--white-color-for-text);
+    margin-bottom: 8%;
+    transition: transform 0.2s ease-in-out;
+}
+.modeCard a:hover{
+    background-color: var(--dark-blue-color-for-bg);
+    transform: scale(1.1);
+}
+
+/* Section 4 */
+.servicesSection4{
+    background-image: url(https://img.freepik.com/premium-photo/business-colleagues-working-office_1048944-23301147.jpg?w=1380);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 250%;
+    position: relative;
+    height: 73vh;
+    justify-content: flex-start;
+}
+.servicesSection4::before{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    content: '';
+    background-image: linear-gradient(105deg , rgba(28, 40, 83, 0.995) 53%, rgba(255, 255, 0, 0) 48%);
+}
+.innerSection4{
+    width: 45%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    z-index: 10;
+}
+.innerSection4 h2{
+    color: var(--red-color-from-logo);
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.innerSection4 p{
+    color: var(--white-color-for-text);
+    font-weight: 200 !important;
+    font-family: var(--sen-font);
+}
+.iconsListHeading{
+    color: var(--red-color-from-logo);
+    font-family: var(--sen-font);
+    font-size: 20px;
+    letter-spacing: 0px;
+    font-weight: 600;
+    margin-top: 3% ;
+}
+.innerIcons{
+    display: flex;
+    align-items: flex-start;
+}
+.innerIconsBody{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    margin-top: 1%;
+    margin-right: 4%;
+    margin-left: 1%;
+    width: 30%;
+}
+.innerIconsBody:last-child{
+    margin-right: 0%;
+}
+.innerIconsBody i{
+    width: 60px;
+    height: 60px;
+    color: var(--white-color-for-text);
+}
+.section4IconsImg{
+    width: 60px;
+    height: 60px;
+}
+.innerIconsBody h3{
+    font-family: var(--scoda-font);
+    color: var(--white-color-for-text);
+    font-weight: 100;
+    letter-spacing: 0.75px;
+    font-size: 17px;
+}
+
+@media (max-width: 1000px){
+
+    /* Section 1 */
+    .servicesSection1{
+        background-position: center bottom;
+        width: 95%;
+        margin-inline: auto;
+    }
+    .servicesSection1::before{
+        background-image: linear-gradient(0deg, rgba(11, 20, 55, 0.453) 30%, rgba(255, 255, 255, 0) 80%);
+    }
+    .servicesSection1 .textSection1{
+        /* padding-left: 2%; */
+        text-align: center;
+        z-index: 10;
+        padding-top: 105%;
+    }
+    .servicesSection1 h2{
+        font-size: 10vw;
+        margin-inline: auto;
+    }
+
+    /* Section 2 */
+    .section2Body{
+        width: 95%;
+        margin-bottom: 3%;
+    }
+    .servicesSection2 .section2Body h2{
+        margin-bottom: 2%;
+        margin-inline: 0%;
+    }
+    .section2Body .toHideInMobile{
+        display: none;
+    }
+    .section2Body2{
+        flex-direction: column;
+        margin-inline: 4%;
+        margin-bottom: 5%;
+    }
+    .section2Body2Inner1{
+        width: 100%;
+        border-radius: 20px 20px 0px 0px;
+    }
+    .section2Body2Inner1 h2{
+        padding: 4% 2%;
+    }
+    .section2Body2Inner2{
+        width: 99.5%;
+        flex-direction: row;
+        overflow-y: auto;
+        overflow-x: hidden;
+        border-radius: 0px 0px 20px 20px;
+        background-color: #0f2c7531;
+        box-shadow: 0px 0px 10px #000000ab;
+    }
+    .section2Body2Inner2::-webkit-scrollbar{
+        width: 8px;
+    }
+    .section2Body2Inner2::-webkit-scrollbar-track{
+        background-color: #a2a2a282;
+        border-radius: 10px;
+        
+    }
+    .sliderCard{
+        width: 250px;
+        height: 250px;
+        margin-inline: auto;
+        margin-block: 3%;
+        padding-bottom: 8%;
+    }
+    .sliderCard:first-child, .sliderCard:last-child{
+        margin: 3% auto;
+    }
+
+
+    /* Section 3 */
+    .servicesSection3{
+        flex-direction: column;
+    }
+    .servicesSection3 h2{
+        font-size: 9vw;
+        text-align: center;
+    }
+    .modesDisplay{
+        flex-direction: column;
+    }
+    .modeCard{
+        width: 80%;
+        margin-block: 4%;
+    }
+
+    /* Section 4 */
+    .servicesSection4{
+        background-size: 180%;
+        background-position-x: 85%;
+        height: 106vh;
+        align-items: flex-end;
+    }
+    .servicesSection4::before{
+        background-image: linear-gradient(360deg , rgba(28, 40, 83, 0.995) 68%, rgba(255, 255, 0, 0) 38%);
+    }
+    .innerSection4{
+        width: 100%;
+        flex-direction: column;
+        margin: 5%;
+    }
+    .innerSection4 h2{
+        margin: 0%;
+    }
+    .iconsListHeading{
+        margin-bottom: 3%;
+    }
+    
+}

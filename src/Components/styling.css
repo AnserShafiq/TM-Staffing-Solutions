@@ -1,0 +1,340 @@
+/* Header */
+.header{
+    display: flex;
+    position: sticky;
+    top:0;
+    z-index: 1000;
+    flex-direction: row;
+    padding: 7px 25px;
+    background-color: #eff0ff;
+}
+.logoDiv{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 35%;
+    cursor: pointer;
+}
+.logoHeader{
+    width:  5vw;
+    height: 5vw;
+}
+.companyName{
+    color: #124889;
+    font-weight: 800;
+    font-family: var(--sen-font);
+    letter-spacing: 1px;
+    margin-left: 2%;
+    font-size: 30px;
+}
+.companyName span{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+    color: #c22328;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    font-family: var(--sen-font);
+}
+.menuDiv{
+    display: flex;
+    width: 65%;
+    justify-content: flex-end;
+    align-items: center;
+}
+.menuListDiv{
+    display: flex;
+    justify-content: space-between;
+}
+.menuListDiv .headerBtns{
+    color: var(--blue-color-from-logo);
+    font-family: var(--sen-font);
+    font-weight: 500;
+    font-size: 1.25vw;
+    display: flex;
+    width: fit-content;
+    margin-inline: 1vw;
+    text-decoration: none;
+}
+.menuListDiv .headerBtns:hover{
+    color: var(--red-color-from-logo);
+    border-bottom: 2px solid var(--red-color-from-logo);
+    padding-bottom: 3px;
+    cursor: pointer;
+}
+.activeBtn{
+    color: var(--blue-color-from-logo);
+    border-bottom: 2px solid var(--red-color-from-logo);
+    padding-bottom: 3px;
+}
+.menuIcon, .closeIcon{
+    display: none;
+}
+#ham-icon{
+    display: block;
+}
+/* Left Sidebar */
+#sideBar{
+    display: flex;
+    justify-content: center;
+    width: calc(100vw - 82vw);
+    top:calc(100vh - 88vh);
+    height: calc(100vh - 14vh);
+    position: sticky;
+    padding: 8px 8px 8px 8px;
+    /* background-color: #124889; */
+}
+.carousel-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px; 
+    /* transition: opacity 1s ease-in-out; */
+}
+.carousel-img.active {
+    opacity: 1;
+    transition: opacity 2s ease-in;
+}
+/* Contact Line */
+.contactLine{
+    background-image: linear-gradient(45deg, #19244d, #29376a,#19244d);
+    min-height: 100px;
+    display: flex; 
+    border-radius: 20px;
+    margin-bottom: 3%;
+    box-shadow: -5px -5px 3px rgba(0, 0, 0, 0.174);
+}
+
+.textFlex{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 55%; 
+    margin: 1% 3% 1% 0%;   
+}
+.toLink{
+    font-size: 100px;
+    color:var(--red-color-from-logo);
+    display: flex;
+}
+.textLine {
+    font-family: var(--sen-font);
+}
+.textLine h3{
+    font-size: 30px;
+    color: #e61010;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.textLine h5{
+    color: var(--white-color-for-text);
+    font-weight: 200;
+    font-size: 18px;
+    letter-spacing: 0.75px;
+}
+.btnsFlex{
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
+}
+.btnsFlex a{
+    font-family: var(--sen-font);
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 10px 20px;
+    transition: transform 0.2s ease-in-out;
+}
+.btnsFlex .empBtn, .btnsFlex .jsBtn:hover{
+    color: var(--white-color-for-text);
+    background-color: #e61010;
+}
+.btnsFlex .jsBtn, .btnsFlex .empBtn:hover{
+    color: var(--red-color-from-logo);
+    background-color: var(--white-color-for-text);
+}
+.empBtn:hover, .jsBtn:hover{
+    transform: scale(1.075);
+}
+
+/* Footer */
+.footer{
+    bottom:0;
+    z-index: 1000;
+    padding: 3% 25px;
+    background-color: #eff0ff;
+}
+.footerCardsSection{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 60%;
+    margin-inline: auto;
+    margin-bottom: 1%;
+}
+.footerCard{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    /* border: 1px solid red; */
+}
+.footerIcon{
+    height: 50px;
+    width: 50px;
+    margin-right: 2%;
+    color: var(--red-color-from-logo);
+}
+.contactDetails h3{
+    font-family: var(--sen-font);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--blue-color-from-logo);
+}
+.contactDetails a{
+    font-size: 17px;
+    color: var(--red-color-from-logo);
+}
+.socialIcons{
+    margin-bottom: 1%;
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+}
+.socialIcons a{
+    font-size: 24px;
+    margin-inline: 10px;
+    color: var(--blue-color-from-logo);
+}
+.socialIcons a:hover{
+    color: var(--red-color-from-logo);
+}
+.footerTextLine{
+    text-align: center;
+    font-family: var(--sen-font);
+    font-size: 18px;
+    color: var(--blue-color-from-logo);
+}
+.footerTextLine .copyrightIcon{
+    color: var(--red-color-from-logo);
+    margin-right: 4px;
+    margin-bottom: -2px;
+}
+
+
+@media (max-width: 1000px) {
+/* Header */
+    .header{
+        justify-content: space-around;
+        padding: 10px;
+        /* width: 100%; */
+    }
+    .logoDiv{
+        width: 80%;
+    }
+    .logoHeader{
+        width: 17vw;
+        height: 17vw;
+    }
+    .companyName{
+        font-size: 6vw;
+        margin-left: 3%;    
+    }
+    .companyName span{
+        font-size: 4vw;
+    }
+    .menu-icon {
+      display: flex;
+      justify-content: flex-end;
+      width: 8%;
+      cursor: pointer;
+    }
+    .menuDiv {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      left: 0%;
+      top: 0%;
+      background-color: #eff0ffe0;
+      width: 0px;
+      height: 100vh;
+      transition: all 0.3s ease-in;
+      overflow: hidden;
+    }
+    .menuDiv.active {
+        width: 100%;
+      }
+    .iconDiv{
+        width: inherit;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 8%;
+        margin-right: 8%;
+    }
+    .iconDiv .closeIcon{
+        display: block;
+        width: 8vw;
+        height: 8vw;
+    }
+    .menuListDiv{
+        display: flex;
+        flex-direction: column;
+        width: inherit;
+        height: auto;
+        margin-top: 10% ;
+    }
+    .menuListDiv .headerBtns{
+        font-size: 6vw;
+        margin: 5%;
+    }
+    #sideBar{
+        display: none;
+    }
+    /* Contact Line */
+    .contactLine{
+        flex-direction: column;
+        margin-inline: 15%;
+        margin-bottom: 10%;
+        width: 90%;
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.571);
+    }
+    .textFlex{
+        flex-direction: column;
+        width: 70%;
+        margin: 5% 3%;
+    }
+    .textLine{
+        text-align: center;
+        margin-top: 5%;
+    }
+    .btnsFlex{
+        flex-direction: column;
+        width: 70%;
+        margin-bottom: 10%;
+    }
+    .btnsFlex a{
+        text-align: center;
+        margin-block: 5%;
+    }
+    /* Footer */
+    .footerCardsSection{
+        flex-direction: column;
+        width: 70%;
+    }    
+    .footerCard{
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 10%;
+    }
+    .footerIcon{
+        width: 50px;
+        margin-right: 2%;
+        margin-top: 0%;
+    }
+
+  }

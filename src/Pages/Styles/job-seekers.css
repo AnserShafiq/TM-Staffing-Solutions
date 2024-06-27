@@ -1,0 +1,313 @@
+/* Section 1 */
+.section1JS{
+    position: relative;
+    max-height: 75vh !important;
+    width: 99%;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 10px 0px 3px;  
+    border-radius: 20px;
+    background-image: url(
+        '../../Images/JobSeekers/JS-Page-Head.jpg'
+    );
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 60%;
+}
+.section1JS::before{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom right, rgba(11, 20, 55, 0.453) 30%, rgba(255, 255, 255, 0) 80%);
+    content: '';
+}
+.section1JS h2{
+    z-index: 10;
+    margin-left: 10%;
+    width: 45%;
+    text-transform: capitalize;
+    color: var(--white-color-for-text);
+}
+.section1JS span{
+    color: var(--red-color-from-logo);
+    text-shadow:  0px 0px 5px #ffffff4b;
+}
+
+/* Section 2 */
+
+.section2Content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    margin-block: 3% 5%;
+}
+.contentSubHeading{
+    color: var(--red-color-from-logo);
+    font-family: var(--sen-font);
+    font-size: 18px;
+}
+.contentHeading{
+    color: var(--blue-color-from-logo) ;
+    text-transform: capitalize;
+}
+.contentDesc{
+    font-family: var(--sen-font);
+    font-weight: 500;
+    font-size: 21px;
+    text-transform: capitalize;
+}
+/* Section 3 */
+.section3JS{
+    height: 425px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.section3JS::before{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    content: ''; 
+}
+.section3BgOne{
+    background-image: url(
+        '../../Images/JobSeekers/job-matching.jpg'    );
+    background-position: right center;
+    justify-content: flex-start;
+}
+.section3BgThree{
+    background-image: url(
+        '../../Images/JobSeekers/opportunities.jpg'
+    );
+    background-position: right center;
+    justify-content: flex-start;
+}
+.section3BgOne::before, .section3BgThree::before{
+    background-image: linear-gradient( 90deg,var(--dark-blue-color-for-bg) 53%, #00000000 47% );
+}
+
+.section3BgTwo{
+    background-image: url(
+        '../../Images/JobSeekers/support.jpg'
+    );
+    background-position: left center;
+    justify-content: flex-end;
+}
+.section3BgTwo::before{
+    background-image: linear-gradient(270deg,var(--dark-blue-color-for-bg) 53%, #00000000 47% );
+}
+
+.sectionInnerContentLeft{
+    z-index: 10;
+    width: 47%;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-inline: 3.5% 1.5%;
+}
+.sectionInnerContent{
+    z-index: 10;
+    width: 47%;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 2.5%;
+}
+.sidedContentHeading{
+    font-family: var(--sen-font);
+    font-size: 35px;
+    letter-spacing: 1px;
+    color: var(--red-color-from-logo);
+    margin-bottom: 2%;
+}
+
+.sidedContentDesc{
+    font-family: var(--sen-font);
+    color: var(--white-color-for-text);
+    font-weight: 100 !important;
+    font-size: 18px;
+    margin-bottom: 4%;
+    margin-inline: 1% 2%;
+}
+.jsAppButton{
+    margin-left: 1%;
+    font-family: var(--sen-font);
+    font-size: 18px;
+    padding: 10px 22px;
+    background-color: var(--red-color-from-logo);
+    width: fit-content;
+    color: var(--white-color-for-text);
+    font-weight: 400;
+    border-radius: 30px;
+    transition: transform 0.15s ease-in-out;
+}
+.jsAppButton:hover{
+    transform: scale(1.05);
+    font-weight: 500;
+    background-color: var(--white-color-for-text);
+    border: 2px solid var(--red-color-from-logo);
+    color: var(--red-color-from-logo);
+}
+/* Section 4 */
+.section4JS{
+    flex-direction: column;
+    margin: 5% 3%;
+}
+.section4Heading{
+    color: var(--blue-color-from-logo);
+    margin-bottom: 1.5%;
+}
+.IP-Steps{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.stepBody{
+    display: flex;
+    height: 17vh;
+    width: 20%;
+    padding: 1.5% 1%;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #eff0ff;
+}
+.stepName{
+    font-family: var(--scoda-font);
+    font-size: 17px;
+    color: var(--blue-color-from-logo);
+    text-transform: uppercase;
+}
+.stepTitle{
+    font-family: var(--sen-font);
+    color: var(--red-color-from-logo);
+    font-size: 1.5vw;
+}
+.stepDesc{
+    font-family: var(--sen-font);
+    color: var(--blue-color-from-logo);
+    font-size: 1.075vw;
+    font-weight: 500;
+}
+.applicationBtn{
+    color: var(--red-color-from-logo);
+}
+.applicationBtn:hover{
+    text-decoration: underline;
+}
+.nextArrow{
+    color: var(--red-color-from-logo);
+    font-size: 2vw;
+}
+/* Section 5 */
+.section5JS{
+    background-image: url(
+        '../../Images/JobSeekers/formCard.png'
+    );
+}
+@media (max-width: 1000px) {
+    /* Section 1 */
+    .forDesktopOnly{
+        display: none;
+    }
+    .forMobileOnly{
+        display: flex;
+        flex-direction: column;
+    }
+    .section1JS{
+        width: 94%;
+        background-image: url('../../Images/JobSeekers/JS-Page-Head-MobileView.jpg');
+        margin: 10px auto 0px auto;
+        background-position: 75% bottom ;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .section1JS::before{
+        background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 30%, rgba(11, 20, 55, 0.453) 70%);
+    }
+    .section1JS h2{
+        width: 91%;
+        font-size: 11vw;
+        margin-inline: auto;
+        margin-bottom: 8%;
+        text-align: center;
+    }
+
+    /* Section 2 */
+    .section2Content{
+        width: 94%;
+    }
+    /* Section 3 */
+    .section3JS{
+        width: 94%;
+        margin: 5% auto;
+        height: 80vh;
+        background-size: 125%;
+        background-position: center top;
+        justify-content: center;
+        align-items: flex-end;
+        border-radius: 20px;
+    }
+    .section3JS::before{
+        position: absolute;
+        border-radius: 20px;    
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        content: ''; 
+        background-image: linear-gradient(0deg,var(--dark-blue-color-for-bg) 58%, #00000000 42% );
+    }
+    .sectionInnerContentLeft, .sectionInnerContent{
+        width: 94%;
+        max-width: 94%;
+        margin-bottom: 10%;
+        margin-inline: 3%;
+    }
+    /* Section 4 */
+    .section4JS{
+        margin-block: 5%;
+    }
+    .section4Heading{
+        text-align: center;
+        margin-bottom: 5%;
+    }
+    .IP-Steps{
+        flex-direction: column;
+    }
+    .stepBody{
+        width: 75%;
+        padding-inline: 3% ;
+        justify-content: center;
+        height: 20vh;
+    }
+    .stepName{
+        font-size: 5vw;
+    }
+    .stepTitle{
+        font-size: 7vw;
+    }
+    .stepDesc{
+        font-size: 5vw;
+    }
+    .nextArrow{
+        rotate: 90deg;
+        margin-block: 3%;
+        font-size: 8vw;
+    }
+    /* Section 5 */
+    .section5JS{
+        background-image: url(
+            '../../Images/JobSeekers/formCardForMobile.png'
+        );
+        height: 89vh;
+    }
+}

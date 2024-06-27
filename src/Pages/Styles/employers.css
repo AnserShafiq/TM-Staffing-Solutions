@@ -1,0 +1,342 @@
+/* Section 1 */
+.section1Employers{
+    position: relative;
+    max-height: 75vh !important;
+    width: 99%;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 10px 0px 3px;  
+    border-radius: 20px;
+    background-image: url(
+        https://img.freepik.com/free-photo/business-team-three-watching-presentation-pc-monitor-discussing-project-sitting-workplace-pointing-display-copy-space-business-meeting-concept_74855-11552.jpg?t=st=1719261092~exp=1719264692~hmac=f96b05cbee71f47dc57061301e15e12c280a05e88b1e7d707dfcd25ad5c1c7fe&w=1060        );
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 60%;
+}
+.section1Employers::before{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom right, rgba(11, 20, 55, 0.453) 30%, rgba(255, 255, 255, 0) 80%);
+    content: '';
+}
+.section1Employers h2{
+    z-index: 10;
+    margin-left: 10%;
+    width: 45%;
+    text-transform: capitalize;
+    color: var(--white-color-for-text);
+}
+.section1Employers span{
+    color: var(--red-color-from-logo);
+    text-shadow:  0px 0px 5px #ffffff4b;
+}
+/* Section 2 */
+.section2Employers{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-size: cover;
+    height: 600px;
+}
+.empBgOne{
+    background-position: left center;
+    background-image: url('../../Images/Employers/emp-bg-one.png');
+}
+.empBgTwo{
+    background-position: right center;
+    background-image: url('../../Images/Employers/emp-bg-two.png');
+}
+.empBgThree{
+    background-position: right center;
+    background-image: url('../../Images/Employers/emp-bg-three.png');
+}
+.sectionContent{
+    display: block;
+    width: 45%;
+}
+.elementSectionHead{
+    font-family: var(--sen-font);
+    color: var(--white-color-for-text);
+    font-size: 45px;
+    letter-spacing: 1px;
+    margin-bottom: 3%;
+}
+.elementSectionDesc{
+    font-family: var(--sen-font);
+    color: var(--white-color-for-text);
+    letter-spacing: 0.5px;
+    margin-right: 10%;
+    margin-bottom: 8%;
+}
+.leftAlign{
+    margin-right: 0% !important;
+    margin-left: 11% !important;
+}
+.formCallBtn{
+    background-color: var(--red-color-from-logo);
+    padding: 10px 20px;
+    font-family: var(--sen-font);
+    color: var(--white-color-for-text);
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    /* transition: transform 0.3s ease-in-out; */
+}
+.formCallBtn:hover{
+    background-color: var(--white-color-for-text);
+    border: 3px solid var(--red-color-from-logo);
+    color: var(--red-color-from-logo);
+    border-radius: 50px;
+}
+.empElement{
+    width: 40%;
+    transition: transform 0.5s ease-in-out;
+}
+.empElement:hover{
+    transform: scale(1.025);
+    cursor: pointer;
+}
+/* Section 5 */
+.section5Employers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-block: 5%;   
+}
+.centeredContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.centeredContent h5{
+    color: var(--red-color-from-logo);
+    font-family: var(--sen-font);
+    font-size: 18px;
+}
+.centeredContent h2{
+    color: var(--blue-color-from-logo) ;
+}
+
+.industryBlocks{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.industryCard{
+    width: 200px;
+    height: 275px;
+    margin: 1.5%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 25px;
+    position: relative;
+    transition: transform 0.3s ease-in;
+}
+.industryCard::before{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    content: '';
+    border-radius: 25px;
+    background-image: linear-gradient(180deg, #ffffff00 50%, #0010013d 80%) ;
+}
+.industryCard:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px var(--red-color-from-logo);
+    color: var(--red-color-from-logo) !important;
+    cursor: pointer;
+}
+.industryCard .cardIndustryName{
+    z-index: 10;
+    font-size: 24px;
+    font-family: var(--sen-font);
+    color: var(--white-color-for-text);
+}
+.industryCard .cardIndustryWord{
+    font-size: 22px;
+    z-index: 10;
+    font-family: var(--sen-font);
+    color: var(--white-color-for-text);
+    padding-bottom: 6%;
+}
+/* Section 6 */
+.section6Employers{
+    background-image: url('../../Images/Employers/formCard.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    justify-content: flex-start;
+    height: 42vh;
+    width: 85%;
+    margin-bottom: 5%;
+}
+.cardsContent{
+    display: flex;
+    width: 55%;
+    margin-left: 11%;
+    padding:1%;
+    flex-direction: column;
+}
+.cardHeading{
+    font-family: var(--sen-font);
+    font-size: 30px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    color: var(--red-color-from-logo);
+    margin-bottom: 2%;
+}
+.cardTagline{
+    font-family: var(--sen-font);
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    color: var(--blue-color-from-logo);
+    margin-bottom: 2%;
+}
+.cardButton{
+    background-color: var(--blue-color-from-logo);
+    font-family: var(--sen-font);
+    color: var(--white-color-for-text);
+    padding: 8px 20px;
+    width:fit-content;
+    border-radius: 20px;
+    transition: transform 0.15s ease-in-out;
+}
+.cardButton:hover{
+    background-color: var(--red-color-from-logo);
+    transform: scale(1.05);
+}
+
+.forDesktopOnly{
+    display: block;
+}
+.forMobileOnly{
+    display: none;
+}
+@media (max-width: 1000px){
+    .forDesktopOnly{
+        display: none;
+    }
+    .forMobileOnly{
+        display: flex;
+        flex-direction: column;
+    }
+    .section1Employers{
+        width: 94%;
+        margin: 10px auto 0px auto;
+        background-position: 75% bottom ;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .section1Employers::before{
+        background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 30%, rgba(11, 20, 55, 0.453) 70%);
+    }
+    .section1Employers h2{
+        width: 91%;
+        font-size: 11vw;
+        margin-inline: auto;
+        margin-bottom: 8%;
+        text-align: center;
+    }
+    /* Section 2, 3, 4 */
+    .section2Employers{
+        height: 96vh;
+        width: 94%;
+        margin: 5% auto;
+        border-radius: 25px;
+        justify-content: space-evenly;
+    }
+    .sectionContent{
+        width: 95%;
+        margin-inline: auto ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .empElement{
+        width:95%;
+        margin-inline: auto;
+    }
+    .elementSectionHead{
+        font-size: 9vw;
+    }
+    .elementSectionDesc{
+        margin-inline: auto;
+    }
+    .empBgOne, .empBgThree{
+        flex-direction: column-reverse;
+    }
+    .empBgTwo{
+        flex-direction: column;
+    }
+    .empBgOne, .empBgThree, .empBgTwo {
+        background-image: url('../../Images/Employers/bgforMobile.png');
+        background-size: cover;
+        background-position: center 70%;
+    }
+    .leftAlign{
+        margin-inline: auto !important;
+    }
+    /* Section 5 */
+    .section5Employers{
+        margin-block: 10%;
+    } 
+    .industryBlocks{
+        flex-wrap: wrap;
+    }
+    .industryCard{
+        width: 45%;
+    }
+    .industryCard:hover{
+        transform: scale(1.015);
+    }
+    .centeredContent h2{
+        text-align: center;
+        font-size: 11vw;
+        margin-inline: 15%;
+        margin-bottom: 5%;
+    }
+    /* Section 6 */
+    .section6Employers{
+        background-image: url('../../Images/Employers/formCardForMobile.png');
+        background-position: center top;
+        align-items: flex-end;
+        justify-content: center;
+        height: 86vh;
+        margin-bottom: 5%;
+    }
+    .cardsContent{
+        width: 94%;
+        margin-inline: 5%;
+        margin-bottom: 10%;
+    }
+    .cardHeading{
+        font-size: 7.5vw;
+        letter-spacing: 0.25px;
+    }
+    .cardTagline{
+        font-size: 5.5vw;
+        margin-block: 5%;
+    }
+    .cardButton{
+        font-size: 5.5vw;
+    }
+}

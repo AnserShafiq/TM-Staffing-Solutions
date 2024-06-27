@@ -1,0 +1,19 @@
+/* src/Layout.css */
+.layout {
+    display: flex;
+}
+
+.content {
+    width: 100%;
+    height: (100vh - 80px);
+    /* background-color: red; */
+}
+
+@media (max-width: 1000px) {
+    
+    .content{
+        margin:0%;
+        width: 100%;
+        height: 100%;
+    }    
+}

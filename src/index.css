@@ -1,0 +1,79 @@
+*{
+  margin: 0%;
+  padding: 0%;
+}
+:root{
+  --scada-font: 'Scada', sans-serif;
+  --sen-font: 'Sen', sans-serif;
+  --poetsen-one-font: 'Poetsen One', sans-serif;
+
+  --dark-color-grey-for-text: #222222 ;
+  --blue-color-from-logo: #124889;
+  --dark-blue-color-for-bg: #07254a;
+  --red-color-from-logo: #c22328;
+  --white-color-for-text: #f5f5f5;
+}
+
+::-webkit-scrollbar{
+  width: 8px;
+}
+::-webkit-scrollbar-track{
+  background-color: #f5f5f5;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #666666;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+body {
+  margin: 0;
+  font-family: var(--scada-font);
+  -webkit-font-smoothing: antialiased;
+  background-color: #f5f5f5;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h2{
+  font-family: var(--sen-font);
+  font-size: 45px;
+  font-weight: 600;
+}
+p{
+  font-family: var(--scada-font);
+  font-size: 19px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: var(--dark-color-grey-for-text);
+}
+a{
+  text-decoration: none;
+}
+.pageBody{
+  /* height: 100%; */
+  width: 100%;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sectionsize{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1000px){
+  h2{
+    font-size: 9vw;
+    line-height: 4.5vh;
+    margin-inline: 5%;
+  }
+  p{
+      font-size: 4.75vw;
+  }
+  .pageBody{
+    width: 100%;
+}
+}
