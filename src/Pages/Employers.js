@@ -4,13 +4,14 @@ import './Styles/styles.css';
 import ElementOne from '../Images/Employers/emp-element-one.png';
 import ElementTwo from '../Images/Employers/emp-element-two.png';
 import ElementThree from '../Images/Employers/emp-element-three.png';
+import { NavLink } from "react-router-dom";
 
 const Employers = () =>{
     return(
         <section className="pageBody">
             {/* Section 1 */}
             <div className="section1 section1Employers">
-                <h2 className="forDesktopOnly">High-Value Services &<br/> <span>Long-Term Benefits </span><br/>at Affordable Costs</h2>
+                <h2 className="forDesktopOnly">High-Value Services &<span>Long-Term Benefits </span>at Affordable Costs</h2>
                 <h2 className="forMobileOnly">High-Value Services And <span>Long-Term Benefits </span>at Affordable Costs</h2>
             </div>
             {/* Section 2 */}
@@ -18,7 +19,7 @@ const Employers = () =>{
                 <div className="sectionContent">
                     <h3 className="elementSectionHead">Strategic Cost Management</h3>
                     <p className="elementSectionDesc">Strategic cost management initiatives are essential for optimizing your operations, enhancing efficiency, and delivering substantial time and cost savings. These initiatives focus on streamlining processes through a combination of innovative approaches and best practices.</p>
-                    <a href="/employers" alt='employers-form' className="formCallBtn">Let's Connect </a>
+                    <NavLink to="/employers-application" alt='employers-form' className="formCallBtn">Let's Connect </NavLink>
                 </div>
                 <img src={ElementOne} className="empElement" alt="element-one"/>
             </div>
@@ -28,7 +29,7 @@ const Employers = () =>{
                 <div className="sectionContent">
                     <h3 className="elementSectionHead leftAlign">Comprehensive Support Services</h3>
                     <p className="elementSectionDesc leftAlign">Our team provides ongoing and personalized support, designed to cater to your specific requirements, guaranteeing consistent help and guidance whenever you need it.</p>
-                    <a href="/employers" alt='employers-form' className="formCallBtn leftAlign">Let's Connect </a>
+                    <NavLink to="/employers-application" alt='employers-form' className="formCallBtn leftAlign">Let's Connect </NavLink>
                 </div>
             </div>
             {/* Section 4 */}
@@ -36,7 +37,7 @@ const Employers = () =>{
                 <div className="sectionContent">
                     <h3 className="elementSectionHead">In-Depth & Extensive Training Curriculum</h3>
                     <p className="elementSectionDesc">Our in-depth and extensive training curriculum is meticulously crafted to ensure that candidates are fully prepared. We equip individuals with the knowledge, skills, and confidence required to meet and exceed job expectations, paving the way for their professional success.</p>
-                    <a href="/employers" alt='employers-form' className="formCallBtn">Let's Connect </a>
+                    <NavLink to="/employers-application" alt='employers-form' className="formCallBtn">Let's Connect </NavLink>
                 </div>
                 <img src={ElementThree} className="empElement" alt="element-three"/>
             </div>
@@ -123,7 +124,7 @@ const Employers = () =>{
                     <h3 className="cardTagline">
                     Join Forces With Us to Attract Premier Talent and Unlock Growth and Success Potential.
                     </h3>
-                    <a href="/" alt='formCallBtn2' className="cardButton">To Apply For Services</a>
+                    <NavLink to="/employers-application" alt='Employers Application Form' className="cardButton">To Apply For Services</NavLink>
                 </div>
             </div>
         </section>

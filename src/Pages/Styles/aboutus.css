@@ -162,7 +162,7 @@
     background-color: var(--dark-blue-color-for-bg);
     padding: 12px 20px;
     font-family: var(--sen-font);
-    font-size: 24px;
+    font-size: 1.5vw;
     text-transform: capitalize;
     font-weight: 600;
     border-radius: 20px;
@@ -232,5 +232,8 @@
         margin-bottom: 3%;
         padding-inline: 5% ;
         line-height: 3vh;
+    }
+    .getInTouchBtn{
+        font-size: 4vw;
     }
 }

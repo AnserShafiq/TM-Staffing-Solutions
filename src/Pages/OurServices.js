@@ -2,15 +2,32 @@ import React from "react";
 import './Styles/services.css'
 import './Styles/styles.css';
 import ContactLine from "../Components/ContactLine";
+import Placement1 from '../Images/OurServices/services-placement-1.jpg';
+import Placement2 from '../Images/OurServices/services-placement-2.jpg';
+import Placement3 from '../Images/OurServices/services-placement-3.jpg';
 import HL from '../Images/OurServices/heavyLifting.png';
 import Health from "../Images/OurServices/health&Safety.png";
 import WorkSpace from "../Images/OurServices/workplace.png";
 import AODA from '../Images/OurServices/AODA.png';
 import DP from '../Images/OurServices/drugPolicies.png';
 import HACCP from '../Images/OurServices/haccp.png';
+import { NavLink } from "react-router-dom";
 
 
 const OurServices = () =>{
+    const displayFormButtons = (event) => {
+        const card = event.currentTarget.closest('.modeCard');
+        const toDisplayBtns = card.getElementsByClassName('hiddenButton');
+        const toHideBtn = card.getElementsByClassName('actionCallBtn');
+
+        for (let i = 0; i < toDisplayBtns.length; i++) {
+            toDisplayBtns[i].style.display = 'flex';
+        }
+        
+        for (let i = 0; i < toHideBtn.length; i++) {
+            toHideBtn[i].style.display = 'none';
+        }
+    }
     return(
         <section className="pageBody">
             {/* Section 1 */}
@@ -96,22 +113,28 @@ const OurServices = () =>{
                 <h2>Types Of Mode We Provides</h2>
                 <div className="modesDisplay">
                     <div className="modeCard">
-                        <img src='https://img.freepik.com/free-photo/medium-shot-woman-measuring_23-2148815579.jpg?t=st=1718914508~exp=1718918108~hmac=5ea8d0a31ebed3b9e522c8ec4809af5484cd7598263d0f1f06e8bb97c5186b25&w=740' alt="temporary-placement"/>
+                        <img src={Placement1} alt="temporary-placement"/>
                         <h3>Temporary Placements</h3>
                         <p>We specialize in temporary staffing solutions that provide your organization with the agility and efficiency to maintain productivity without the long-term commitment</p>
-                        <a href='/about-us'>Apply now!</a>
+                        <button className='actionCallBtn'  onClick={displayFormButtons}>Apply now!</button>
+                        <NavLink className='hiddenButton' to='/employers-application'>Looking For Candidates?</NavLink>
+                        <NavLink className='hiddenButton' to='/job-seekers-application'>Looking For Job?</NavLink>
                     </div>
                     <div className="modeCard">
-                        <img src='https://img.freepik.com/free-photo/businessman-working-with-laptop-office_23-2148017076.jpg?t=st=1718916624~exp=1718920224~hmac=18d34fab90b50ffd11ad090ab2d2d12d93b34f28584999c48dfcaaea259a1b91&w=740' alt="permanent-placement"/>
+                        <img src={Placement2} alt="permanent-placement"/>
                         <h3>Permanent Placements</h3>
                         <p>We specialize in identifying and placing the best candidates in permanent positions that align with your company's culture and long-term objectives</p>
-                        <a href='/about-us'>Apply now!</a>
+                        <button className='actionCallBtn'  onClick={displayFormButtons}>Apply now!</button>
+                        <NavLink className='hiddenButton' to='/employers-application'>Looking For Candidates?</NavLink>
+                        <NavLink className='hiddenButton' to='/job-seekers-application'>Looking For Job?</NavLink>
                     </div>
                     <div className="modeCard">
-                        <img src='https://img.freepik.com/free-photo/thoughtful-business-woman-with-laptop-table_23-2148071526.jpg?t=st=1718981620~exp=1718985220~hmac=225119acfbe44f02ac42f76ef841cc2e1d3d6bdbb33b24bd062b19fec65cf9ac&w=740' alt="direct-hiring"/>
+                        <img src={Placement3} alt="direct-hiring"/>
                         <h3>Direct Hiring</h3>
                         <p>We specialize in direct hiring solutions that ensure your company gains access to the best talent available, matched precisely to your organizational needs.</p>
-                        <a href='/about-us'>Apply now!</a>
+                        <button className='actionCallBtn'  onClick={displayFormButtons}>Apply now!</button>
+                        <NavLink className='hiddenButton' to='/employers-application'>Looking For Candidates?</NavLink>
+                        <NavLink className='hiddenButton' to='/job-seekers-application'>Looking For Job?</NavLink>
                     </div>
                 </div>
 

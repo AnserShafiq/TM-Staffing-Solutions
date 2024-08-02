@@ -1,6 +1,7 @@
 import React from "react";
 import { LuClipboardList as ToLink} from "react-icons/lu";
 import './styling.css';
+import { NavLink } from "react-router-dom";
 
 const ContactLine =() =>{
     return(
@@ -14,8 +15,8 @@ const ContactLine =() =>{
                     
                 </div>
                 <div className="btnsFlex">
-                    <a href='/about-us' className="empBtn">For Employers</a>
-                    <a href='/about-us' className="jsBtn">For Job Seekers</a>
+                    <NavLink to='/employers-application' className="empBtn">For Employers</NavLink>
+                    <NavLink to='/job-seekers-application' className="jsBtn">For Job Seekers</NavLink>
                 </div>
             </div>
     )

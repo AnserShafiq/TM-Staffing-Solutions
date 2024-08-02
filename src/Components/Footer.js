@@ -44,7 +44,7 @@ const Footer = () =>{
                 <a href="https://www.facebook.com/" alt='facebookBtn'><LinkedIn/></a>
             </div>
             <div className="footerTextLine">
-                <h5><Copyright className="copyrightIcon"/>2024 TM Staffing Solutions. All Right Reserved.</h5>
+                <h5><Copyright className="copyrightIcon"/>2013 TM Staffing Solutions. All Right Reserved.</h5>
             </div>
         </section>
     );

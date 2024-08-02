@@ -1,0 +1,177 @@
+.section2JSForm{
+    position: relative;
+    max-height: 55vh !important;
+    width: 99%;
+    flex-direction: column;
+    margin: 10px 10px 0px 3px; 
+}
+.posterImg{
+    width:inherit;
+}
+.section2JSForm h2{
+    color: var(--blue-color-from-logo);
+}
+.section2JSForm h4{
+    font-family: var(--sen-font);
+    color: var(--red-color-from-logo);
+    text-transform: capitalize;
+}
+
+
+.error{
+    color: rgb(89, 7, 7);
+    font-family: var(--sen-font);
+    font-size: 0.75vw;
+    font-weight: 500;
+}
+.formBody{
+    width: 75%;
+    display: grid;
+    margin-inline: auto;
+}
+.mainHeading{
+    font-family: var(--sen-font);
+    border-bottom: 2px solid var(--blue-color-from-logo); 
+    font-size: 2vw;
+    width: fit-content;
+    margin-block: 2% 0.5%;
+    letter-spacing: 1px;
+    color: var(--red-color-from-logo); 
+}
+.subHeading{
+    font-family: var(--sen-font);
+    font-size: 1.15vw;
+    font-weight: 500;
+    color: var(--blue-color-from-logo);
+}
+.forMarginLeft{
+    margin-left: 3%;
+}
+.blocksDisplay{
+width: 96%;
+display: flex;
+flex-wrap: wrap;
+margin-inline: auto;
+}
+.contentBody{
+width: 31%;
+display: flex;
+flex-direction: column;
+margin-inline: 1%;
+margin-bottom: 1%;
+}
+
+.checkBox{
+    margin-left: 2% ;
+    width: 13%;
+    font-size: 0.9vw;
+    margin-top: 0.5%;
+    font-weight: 600;
+    font-family: var(--sen-font);
+    color: var(--red-color-from-logo);  
+}
+.checkBox input[type='radio' i]{
+    cursor: pointer;
+}
+
+.fullDisplay{
+width: 95.25%;
+/* padding-inline: 1%; */
+}
+.employersDate{
+    width:93%;
+}
+.halfDisplay{
+width: 45.5%;
+}
+
+.datesDiv{
+display: flex;
+justify-content: space-between;
+width: 100%;
+}
+.datesDiv select{
+width: 30%;
+}
+.dataEntrySection{
+    padding: 5px 10px;
+    font-family: var(--sen-font);
+    font-size: 0.9vw;
+    font-weight: 500 ;
+    color: var(--red-color-from-logo);
+    background-color: #e3e5fd;
+    border: none;
+    border-radius: 5px;
+    margin-top: 0.5%;
+}
+.entrySection::placeholder{
+    color: #656bb1;
+}
+.submitBtn{
+    background-color: var(--red-color-from-logo);
+    border: none;
+    padding: 1vh 2vw;
+    font-family: var(--sen-font);
+    font-size: 1.25vw;
+    font-weight: 600;
+    color: var(--white-color-for-text);
+    width: fit-content;
+    margin: 3% auto 5%;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+.submitBtn:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+@media (max-width: 1000px) {
+    .section2JSForm{
+        overflow: hidden;
+    }
+    .posterImg{
+        width: 200vw;
+    }
+    .section2JSForm h2{
+        text-align: center;
+        font-size: 7.0vw;
+        margin: 3% auto 1%;
+    }
+    .section2JSForm h4{
+        text-align: center;
+        font-size: 5vw;
+        margin: 0% auto 1%;
+    }
+    .formBody{
+        width: 85%;
+    }
+    .mainHeading{
+        font-size: 4.5vw;
+        letter-spacing: 0px;
+        margin-block: 2% 1%;
+    }
+    .blocksDisplay{
+        flex-direction: column;
+    }
+    .contentBody{
+        width: 96%;
+        margin: 2% auto;
+    }
+    .bodyForMobile{
+        width: 100%;
+        margin: 2% 0%; 
+    }
+    .subHeading{
+        font-size: 4vw;
+    }
+    .dataEntrySection{
+        font-size: 3.5vw;
+    }
+    .submitBtn{
+        font-size: 5vw;
+    }
+    .checkBox{
+        font-size: 3.5vw;
+        width: 100%;
+        margin-top: 1%;
+    }
+}

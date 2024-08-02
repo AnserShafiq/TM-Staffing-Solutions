@@ -43,7 +43,7 @@
     justify-content:flex-start;
     align-content: center;
 }
-.section1Btns a{
+.section1Btns a, .section1Btns button{
     margin: 1% 7% 1% 0%;
     padding: 2% 5%;
     border-radius: 25px;
@@ -51,7 +51,6 @@
     text-decoration: none;
     font-size: 18px;
     display: flex;
-
 }
 
 #btn1{
@@ -67,6 +66,8 @@
 #btn2{
     color: var(--white-color-for-text);
     border: 2px solid var(--white-color-for-text);
+    background-color: #00000000;
+    cursor: pointer;
 }
 #btn2:hover{
     color:var(--red-color-from-logo);

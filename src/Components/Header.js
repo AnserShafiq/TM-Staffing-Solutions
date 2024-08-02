@@ -40,8 +40,8 @@ const Header = ({setLoading}) => {
                     <CloseIcon className="closeIcon" alt="Close menu" onClick={handleShowNavbar} />
                 </div>
                 <div className="menuListDiv">
-                    <h4><NavLink className={({ isActive }) => isActive ? 'headerBtns activeBtn' : 'headerBtns'} to='/'>Home</NavLink></h4>
-                    <h4><NavLink className={({ isActive }) => isActive ? 'headerBtns activeBtn' : 'headerBtns'} to='/about-us'>About Us</NavLink></h4>
+                    <h4><NavLink className={({ isActive }) => isActive ? 'headerBtns activeBtn' : 'headerBtns'} to='/' >Home</NavLink></h4>
+                    <h4><NavLink className={({ isActive }) => isActive ? 'headerBtns activeBtn' : 'headerBtns'} to='/about-us' >About Us</NavLink></h4>
                     <h4><NavLink className={({ isActive }) => isActive ? 'headerBtns activeBtn' : 'headerBtns'} to='/employers'>Employers</NavLink></h4>
                     <h4><NavLink className={({ isActive }) => isActive ? 'headerBtns activeBtn' : 'headerBtns'} to='/job-seekers'>Job Seekers</NavLink></h4>
                     <h4><NavLink className={({ isActive }) => isActive ? 'headerBtns activeBtn' : 'headerBtns'} to='/our-services'>Our Services</NavLink></h4>

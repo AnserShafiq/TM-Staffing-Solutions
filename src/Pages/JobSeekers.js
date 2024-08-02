@@ -2,13 +2,14 @@ import React from "react";
 import './Styles/job-seekers.css';
 import './Styles/styles.css';
 import { FaArrowRightLong as Right} from "react-icons/fa6";
+import { NavLink } from "react-router-dom";
 
 const JobSeekers = () =>{
     return(
         <section className="pageBody">
             {/* Section 1 */}
             <div className="section1 section1JS">
-                <h2 className="forDesktopOnly">Providing Professional <br/><span>Growth, & Empowering</span><br /> Your Path to Success</h2>
+                <h2 className="forDesktopOnly">Providing Professional <span>Growth, & Empowering</span>Your Path to Success</h2>
                 <h2 className="forMobileOnly">Providing Professional <span>Growth, & Empowering</span>Your Path to Success</h2>
             </div>
             {/* Section 2 */}
@@ -32,14 +33,14 @@ const JobSeekers = () =>{
                 <div className="sectionInnerContent">
                     <h3 className="sidedContentHeading">Career Development Support</h3>
                     <p className="sidedContentDesc">Our comprehensive career development support includes resume building, interview coaching, and skill enhancement workshops. We are committed to helping you present your best self to potential employers and advance your career. With our guidance, you'll be well-prepared to navigate the job market and achieve your career objectives.</p>
-                    <a href='/job-seekers' alt='JS-Button-For-Application' className="jsAppButton">To Get Enrolled</a>
+                    <NavLink to='/job-seekers' alt='JS-Button-For-Application' className="jsAppButton">To Get Enrolled</NavLink>
                 </div>
             </div>
             <div className=" sectionsize section3JS section3BgThree">
                 <div className="sectionInnerContentLeft">
                     <h3 className="sidedContentHeading">Access to Exclusive Opportunities</h3>
                     <p className="sidedContentDesc">You gain access to a wide range of exclusive job opportunities that are not publicly advertised. Our extensive network of industry connections allows us to connect you with top-tier employers seeking qualified professionals like you. This gives you a competitive edge in finding the perfect job that matches your ambitions.</p>
-                    <a href='/job-seekers' alt='JS-Button-For-Application' className="jsAppButton">To Get Enrolled</a>
+                    <NavLink to='/job-seekers-application' alt='JS-Button-For-Application' className="jsAppButton">To Get Enrolled</NavLink>
                 </div>
             </div>
             {/* Section 4 */}
@@ -49,7 +50,7 @@ const JobSeekers = () =>{
                     <div className="stepBody">
                         <h3 className="stepName">Step 1</h3>
                         <h3 className="stepTitle">Initial Contact</h3>
-                        <h3 className="stepDesc">Share your requirements with us by <a href="/job-seekers" className="applicationBtn">Submitting a Request Form</a> to initiate the process.</h3>
+                        <h3 className="stepDesc">Share your requirements with us by <NavLink href="/job-seekers-application" className="applicationBtn">Submitting a Request Form</NavLink> to initiate the process.</h3>
                     </div>
                     <Right className="nextArrow"/>
                     <div className="stepBody">
@@ -79,7 +80,7 @@ const JobSeekers = () =>{
                     <h3 className="cardTagline">
                     Join us in connecting with top employers & unlocking new opportunities for growth & success!
                     </h3>
-                    <a href="/" alt='formCallBtn2' className="cardButton">To Apply For Jobs</a>
+                    <NavLink to="/job-seekers-application" alt='formCallBtn2' className="cardButton">To Apply For Jobs</NavLink>
                 </div>
             </div>
         </section>

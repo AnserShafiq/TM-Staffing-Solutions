@@ -96,6 +96,9 @@
     opacity: 1;
     transition: opacity 2s ease-in;
 }
+.slider{
+    cursor: pointer;
+}
 /* Contact Line */
 .contactLine{
     background-image: linear-gradient(45deg, #19244d, #29376a,#19244d);
@@ -140,7 +143,7 @@
 }
 .btnsFlex a{
     font-family: var(--sen-font);
-    font-size: 22px;
+    font-size: 1.3vw;
     font-weight: 600;
     border-radius: 10px;
     padding: 10px 20px;
@@ -312,12 +315,13 @@
     }
     .btnsFlex{
         flex-direction: column;
-        width: 70%;
+        width: 60%;
         margin-bottom: 10%;
     }
     .btnsFlex a{
         text-align: center;
         margin-block: 5%;
+        font-size: 5vw;
     }
     /* Footer */
     .footerCardsSection{

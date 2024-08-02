@@ -1,6 +1,6 @@
 import React from "react";
 import './Styles/styles.css';
-
+import { NavLink } from "react-router-dom";
 import HomeImg1 from '../Images/Home/home-img-1.jpg'
 import Icon1 from '../Images/Icons/hiring-process.svg';
 import Icon2 from '../Images/Icons/personalized-jobs.svg';
@@ -18,8 +18,10 @@ const HomePage = () =>{
                         We <span>empower</span> your team recruitment
                     </h3>
                     <div className="section1Btns">
-                        <a href='wwww.google.com' alt='button' id="btn1"> Looking For A Job</a>
-                        <a href='wwww.google.com' alt='button' id="btn2"> Looking To Hire</a>
+                        {/* <a href='/job-seekers-application' alt='button' id="btn1"> Looking For A Job</a> */}
+                        <NavLink to='/job-seekers-application' id="btn1">Looking For A Job</NavLink>
+                        <NavLink to='/employers-application' id="btn2">Looking To Hire</NavLink>
+                        {/* <button onClick={()=> window.location.href = '/employers-application'} alt='button' id="btn2"> Looking To Hire</button> */}
                     </div>
                 </div>
                 <div className="imageHomeSection1">
@@ -102,7 +104,7 @@ const HomePage = () =>{
                 <h2>24/7 Assistance for Your Hiring <br/>and Job Search Needs
                 </h2>
                 <p>If you have any questions or need guidance, please reach out. Whether you're an employer seeking to fill a position or a candidate searching for your next opportunity, we're here to support you.</p>
-                <a href='/about-us' className="btnDownHome">Get In Touch</a>
+                <NavLink to='/about-us' className="btnDownHome">Get In Touch</NavLink>
             </div>
             </div>
         </section>

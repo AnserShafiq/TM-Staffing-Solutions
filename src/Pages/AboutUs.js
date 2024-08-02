@@ -3,6 +3,7 @@ import Img1 from '../Images/About/about-us-img-1.jpg';
 import ContactLine from "../Components/ContactLine";
 import './Styles/aboutus.css';
 import './Styles/styles.css';
+import { NavLink } from "react-router-dom";
 const AboutUs = () =>{
     const [hovered,  setHovered] = useState('');
     
@@ -69,7 +70,7 @@ const AboutUs = () =>{
                 <h5 className="helpLine">Discover the ways we can help you thrive</h5>
                 <h2>Reimagining Recruitment for <br/> Optimal Results</h2>
                 <p>Discover innovative recruitment strategies designed to deliver the best candidates efficiently and effectively, ensuring your organization achieves optimal results with every hire</p>
-                <a href="/contact-us" className="getInTouchBtn"> Get in touch</a>
+                <NavLink to="/contact-us" className="getInTouchBtn"> Get in touch</NavLink>
 
             </div>
 

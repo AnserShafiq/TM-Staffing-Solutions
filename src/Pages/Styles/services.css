@@ -173,7 +173,7 @@
     background-image: url(https://img.freepik.com/free-photo/heavy-excavator-digging-day-light_23-2149194833.jpg?t=st=1718907141~exp=1718910741~hmac=b37b066c926b26f02b6b6d0c34f556f829539366c745a6123e48f3f67aa14236&w=360);
 }
 .aerospace{
-    background-image: url(https://img.freepik.com/free-photo/engineer-working-with-airplane_1098-12553.jpg?t=st=1718907983~exp=1718911583~hmac=e71f4e23ec2ceb0d3840f94c88b3b87c430656ad3cc892afa34b0f8f955a481a&w=740);
+    background-image: url('../../Images/aerospace.jpg');
 }
 .textile{
     background-image: url(https://img.freepik.com/free-photo/picture-tailor-s-desktop-sewing-workshop_613910-5273.jpg?t=st=1718908329~exp=1718911929~hmac=3eefde6b94ff99e8d95f8bd5417a9ea67cab1cb61301e8053145c70ab047e5bb&w=360);
@@ -202,6 +202,12 @@
     align-items: center;
     width: 100%;
     margin-block: 2% 3%;
+}
+.actionCallBtn{
+    display: flex;
+}
+.hiddenButton{
+    display: none;
 }
 .modeCard{
     display: flex;
@@ -237,7 +243,7 @@
     margin-bottom: 3%;
     margin-inline: 5%;
 }
-.modeCard a{
+.modeCard a, .modeCard button{
     font-size: 20px;
     font-family: var(--scoda-font);
     padding: 6px 20px;
@@ -248,19 +254,19 @@
     margin-bottom: 8%;
     transition: transform 0.2s ease-in-out;
 }
-.modeCard a:hover{
+.modeCard a:hover, .modeCard button:hover{
     background-color: var(--dark-blue-color-for-bg);
     transform: scale(1.1);
 }
 
 /* Section 4 */
 .servicesSection4{
-    background-image: url(https://img.freepik.com/premium-photo/business-colleagues-working-office_1048944-23301147.jpg?w=1380);
+    background-image: url('../../Images/OurServices/footerImg.jpg');
     background-size: contain;
     background-repeat: no-repeat;
-    background-position-x: 250%;
+    background-position: right center;
     position: relative;
-    height: 73vh;
+    height: 100%;
     justify-content: flex-start;
 }
 .servicesSection4::before{
@@ -274,6 +280,7 @@
 }
 .innerSection4{
     width: 45%;
+    padding-block: 5%;
     margin-left: 5%;
     display: flex;
     flex-direction: column;
@@ -426,9 +433,10 @@
 
     /* Section 4 */
     .servicesSection4{
-        background-size: 180%;
+        background-size: 130%;
         background-position-x: 85%;
-        height: 106vh;
+        background-position-y: top;
+        height: 110vh;
         align-items: flex-end;
     }
     .servicesSection4::before{

@@ -8,7 +8,7 @@
     background-image: url('../../Images/ContactUs/contactUS.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center top ;
+    background-position: center center ;
 }
 .section1ContactUs::before{
     position: absolute;
@@ -17,7 +17,7 @@
     height: 100%;
     width: 100%;
     border-radius: 20px;
-    background-image: linear-gradient(to bottom right, rgba(11, 20, 55, 0.453) 30%, rgba(255, 255, 255, 0) 80%);
+    background-image: linear-gradient(90deg, rgba(11, 20, 55, 0.453) 30%  , rgba(255, 255, 255, 0) 30% , rgba(11, 20, 55, 0.453) 30%);
     content: '';
 }
 .section1LeftSide{
@@ -45,14 +45,14 @@
     margin-bottom: 1%;
     letter-spacing: 0.75px;
 }
-.section1LeftSide .contactsTarget{
+.section1LeftSide .contactsTarget a{
     color: var(--white-color-for-text);
     width:fit-content;
     border-bottom: 3px solid var(--red-color-from-logo);
     font-size: 25px;
     font-family: var(--sen-font);
     letter-spacing: 0.25px;
-    margin-left: 5%;
+    margin-left: 1%;
     transition: transform 0.3s ease-in-out;
 }
 .section1LeftSide .contactsTarget:hover{
@@ -186,7 +186,7 @@
         justify-content: flex-end;
         width: 94%;
         margin: 10px auto 0px auto; 
-        background-position: 28% center;
+        background-position: 70% center;
     }
     .section1ContactUs::before{
         background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 10%, rgba(11, 20, 55, 0.453) 60%);
@@ -200,8 +200,8 @@
         display: none;
     }
     .section1LeftSide .sectionHeading{
-        font-size: 10vw;
-        letter-spacing: 0.25px;
+        font-size: 9vw;
+        letter-spacing: 0px;
         text-align: center;
     }
     .section1LeftSide .contactsHead{
@@ -209,10 +209,15 @@
         text-align: center;
         margin-left: 0%;
     }
-    .section1LeftSide .contactsTarget{
+    .section1LeftSide .contactsTarget {
         font-size: 24px;
-        margin-left: 0%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
         align-self: center;
+    }
+    .section1LeftSide .contactsTarget a{
+        font-size: 6vw;
     }
     #forMobileView{
         display: block;

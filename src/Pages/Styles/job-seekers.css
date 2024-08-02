@@ -213,6 +213,17 @@
         '../../Images/JobSeekers/formCard.png'
     );
 }
+@media (min-width: 1600px) {
+    .section3JS{
+        background-size: 50%;
+    }
+    .section3BgOne, .section3BgThree{
+        background-position: 100% 0%;
+    }
+    .section3BgTwo{
+        background-position: 0% 0%;
+    }
+}
 @media (max-width: 1000px) {
     /* Section 1 */
     .forDesktopOnly{

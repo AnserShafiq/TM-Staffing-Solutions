@@ -8,7 +8,8 @@
     margin: 10px 10px 0px 3px;  
     border-radius: 20px;
     background-image: url(
-        https://img.freepik.com/free-photo/business-team-three-watching-presentation-pc-monitor-discussing-project-sitting-workplace-pointing-display-copy-space-business-meeting-concept_74855-11552.jpg?t=st=1719261092~exp=1719264692~hmac=f96b05cbee71f47dc57061301e15e12c280a05e88b1e7d707dfcd25ad5c1c7fe&w=1060        );
+        '../../Images/Employers/empHead.jpg'
+        );
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center 60%;
@@ -224,7 +225,8 @@
 }
 
 .forDesktopOnly{
-    display: block;
+    display:flex;
+    flex-direction: column;
 }
 .forMobileOnly{
     display: none;
